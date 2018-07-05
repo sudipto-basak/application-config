@@ -15,7 +15,6 @@ zuul:
             path: /discovery/**
             sensitive-headers: Set-Cookie,Authorization
             url: http://localhost:8085
-    routes:
         resort-service:
             path: /resort-service/**
             sensitive-headers: Set-Cookie,Authorization
