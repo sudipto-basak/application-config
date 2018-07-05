@@ -1,15 +1,15 @@
 spring:
-	application:
-		name: discovery
+    application:
+        name: discovery
 server:
-	port: 8085
- 
+    port: 8085
+
 eureka:
- 	instance:
-  		hostname: localhost
- 
-	client:
-		serviceUrl:
-			defaultZone: http://localhost:8085/eureka/
-		register-with-eureka: false
-		fetch-registry: false
+    instance:
+        hostname: localhost
+
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8085/eureka/
+        register-with-eureka: false
+        fetch-registry: false
