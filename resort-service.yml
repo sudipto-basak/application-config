@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: resort-service
+server:
+    port: 8901
+
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 10
