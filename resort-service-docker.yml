@@ -7,7 +7,7 @@ spring:
         password: testuser
 
 server:
-    port: 8002
+    port: 9002
 
 eureka:
   client:
