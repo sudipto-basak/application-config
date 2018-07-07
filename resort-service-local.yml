@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: resort-service
+    datasource:
+        url: jdbc:postgresql://localhost:5432/testdb
+        username: testuser
+        password: testuser
+
+server:
+    port: 21002
+
+eureka:
+  client:
+    enabled: false
+    region: default
+    registryFetchIntervalSeconds: 10

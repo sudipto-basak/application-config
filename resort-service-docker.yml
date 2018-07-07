@@ -2,14 +2,15 @@ spring:
     application:
         name: resort-service
     datasource:
-        url: jdbc:postgresql://localhost:5432/testdb
+        url: jdbc:postgresql://postgres:5432/testdb
         username: testuser
         password: testuser
 
 server:
-    port: 8901
+    port: 8002
 
 eureka:
   client:
+    enabled: false
     region: default
     registryFetchIntervalSeconds: 10
