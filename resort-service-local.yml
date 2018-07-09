@@ -13,6 +13,6 @@ server:
 
 eureka:
   client:
-    enabled: false
+    enabled: true
     region: default
     registryFetchIntervalSeconds: 10
