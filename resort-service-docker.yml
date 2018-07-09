@@ -5,6 +5,8 @@ spring:
         url: jdbc:postgresql://postgres:5432/testdb
         username: testuser
         password: testuser
+        hikari:
+            minimumIdle: 2
 
 server:
     port: 9002

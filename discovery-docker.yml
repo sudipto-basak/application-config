@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: discovery
+server:
+    port: 8085
+
+eureka:
+    instance:
+        hostname: discoveryservice
+
+    client:
+        serviceUrl:
+            defaultZone: http://discoveryservice:8085/eureka/
+        register-with-eureka: false
+        fetch-registry: false
