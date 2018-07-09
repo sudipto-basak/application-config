@@ -13,7 +13,6 @@ server:
 
 eureka:
   client:
-    enabled: true
-    defaultZone: http://discoveryservice:9001/eureka/
+   enabled: true
     region: default
     registryFetchIntervalSeconds: 10
