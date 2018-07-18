@@ -10,6 +10,6 @@ eureka:
 
     client:
         serviceUrl:
-            defaultZone: http://discoveryservice:9001/eureka/
+            defaultZone: http://discovery-service:8000/eureka/
         register-with-eureka: false
         fetch-registry: false
