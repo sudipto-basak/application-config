@@ -1,0 +1,22 @@
+server:
+  host: ${HOSTNAME:localhost}
+  port: ${PORT:9000}
+
+database:
+  dbhost: weroranp-scan.us.int.rci.com
+  dbport: 1521
+  dbservicename: ods2db_user_adhoc.us.int.rci.com
+  dbuser: endeca_temp
+  dbpassword: endeca_temp
+  dbdriver: oracle.jdbc.OracleDriver
+
+spring:
+  application:
+    name: resort
+  datasource:
+    url: jdbc:oracle:thin:@${database.dbhost}:${database.dbport}/${database.dbservicename}
+    username: ${database.dbuser}
+    password: ${database.dbpassword}
+    driver-class-name: ${database.dbdriver}
+    hikari:
+      minimumIdle: 2
