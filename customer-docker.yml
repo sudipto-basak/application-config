@@ -1,0 +1,36 @@
+server:
+  host: ${HOSTNAME:localhost}
+  port: ${PORT:9090}
+
+#database:
+#  dbhost: weroranp-scan.us.int.rci.com
+#  dbport: 1521
+#  dbservicename: ods2db_user_adhoc.us.int.rci.com
+#  dbuser: endeca_temp
+#  dbpassword: endeca_temp
+#  dbdriver: oracle.jdbc.OracleDriver
+
+database:
+  dbhost: postgres
+  dbport: 5432
+  dbuser: testuser
+  dbpassword: testuser
+  dbname: testdb
+
+
+spring:
+  application:
+    name: customer
+#  datasource:
+#    url: jdbc:oracle:thin:@${database.dbhost}:${database.dbport}/${database.dbservicename}
+#    username: ${database.dbuser}
+#    password: ${database.dbpassword}
+#    driver-class-name: ${database.dbdriver}
+#    hikari:
+#      minimumIdle: 2
+  datasource:
+    url: jdbc:postgresql://${database.dbhost}:${database.dbport}/${database.dbname}
+    username: ${database.dbuser}
+    password: ${database.dbpassword}
+    hikari:
+      minimumIdle: 2
