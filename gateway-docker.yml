@@ -1,13 +1,10 @@
+server:
+  host: ${HOSTNAME:localhost}
+  port: ${PORT:9090}
+
 spring:
     application:
         name: gateway
-server:
-    port: 9090
-
-eureka:
-  client:
-    region: default
-    registryFetchIntervalSeconds: 10
 
 zuul:
     routes: 
@@ -15,6 +12,6 @@ zuul:
             path: /discovery/**
             sensitive-headers: Set-Cookie,Authorization
             url: http://discoveryservice:9001
-        resort-service:
+        resort:
             path: /resort-service/**
             sensitive-headers: Set-Cookie,Authorization
