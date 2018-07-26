@@ -15,3 +15,6 @@ zuul:
         resort:
             path: /resort-service/**
             sensitive-headers: Set-Cookie,Authorization
+        webapp:
+            path: /web/**
+            sensitive-headers: Set-Cookie,Authorization
