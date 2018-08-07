@@ -1,6 +1,5 @@
 server:
-  host: ${HOSTNAME:localhost}
-  port: ${PORT:9100}
+  port: ${RESORT_PORT:11003}
 
 database:
   dbhost: weroranp-scan.us.int.rci.com
