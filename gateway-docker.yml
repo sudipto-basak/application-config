@@ -1,6 +1,5 @@
 server:
-  host: ${HOSTNAME:localhost}
-  port: ${PORT:9090}
+  port: ${GATEWAY_PORT:9090}
 
 spring:
     application:
