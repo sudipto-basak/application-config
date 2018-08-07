@@ -2,7 +2,8 @@ server:
   port: ${RESORT_PORT:11003}
 
 database:
-  dbhost: weroranp-scan.us.int.rci.com
+#  dbhost: weroranp-scan.us.int.rci.com
+  dbhost: 10.54.223.55
   dbport: 1521
   dbservicename: ods2db_user_adhoc.us.int.rci.com
   dbuser: endeca_temp
