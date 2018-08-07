@@ -1,6 +1,5 @@
 server:
-  host: ${HOSTNAME:localhost}
-  port: ${PORT:11000}
+  port: ${WEBAPP_PORT:11004}
 
 spring:
   application:
