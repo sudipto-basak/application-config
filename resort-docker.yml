@@ -4,7 +4,7 @@ server:
 database:
 #  dbhost: 
   dbhost: $(DB_HOST}
-  dbport: 1521
+  dbport: $(DB_PORT}
   dbservicename: $(DB_SERVICE}
   dbuser: $(DB_USER}
   dbpassword: $(DB_PASSWD}
