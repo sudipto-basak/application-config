@@ -3,11 +3,11 @@ server:
 
 database:
 #  dbhost: 
-  dbhost: 
+  dbhost: $(DB_HOST}
   dbport: 1521
-  dbservicename: 
-  dbuser: endeca_temp
-  dbpassword: 
+  dbservicename: $(DB_SERVICE}
+  dbuser: $(DB_USER}
+  dbpassword: $(DB_PASSWD}
   dbdriver: oracle.jdbc.OracleDriver
 
 #database:
